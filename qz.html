@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>welcome</title>
+        <link rel="stylesheet" href="styles1.css">
+
+
+        <script>
+                function myfuction() 
+                {
+                            
+                                var count=0;
+                                var radio= document.getElementsByName('qn1');
+                                console.log(radio)
+                                var radio1=document.getElementsByName('qn2');
+                                var radio2=document.getElementsByName('qn3');
+                                var radio3=document.getElementsByName('qn4');
+                                var radio4=document.getElementsByName('qn5');
+                                for(var x=0; x < radio.length; x++ ){
+                                if(radio[x].value =='tim' &&  radio[x].checked)
+                                {
+                                    
+                                    count=count+1;
+                                    
+                                    
+                                    
+                                    
+                                }
+                                if(radio1[x].value =='itl' &&  radio1[x].checked)
+                                {
+                                    
+                                    count=count+1;
+                                    
+                                    
+                                    
+                                    
+                                }
+                                if(radio2[x].value =='spain' &&  radio2[x].checked)
+                                {
+                                    
+                                    count=count+1;
+                                    
+                                    
+                                    
+                                    
+                                }
+                                if(radio3[x].value =='rus' &&  radio3[x].checked)
+                                {
+                                    
+                                    count=count+1;
+                                    
+                                    
+                                    
+                                    
+                                }
+                                if(radio4[x].value =='rus' &&  radio4[x].checked)
+                                {
+                                    
+                                    count=count+1;
+                                    
+                                    
+                                    
+                                    
+                                }
+                    
+                            }
+                            
+                            document.getElementById("lee1").style.color = "blue";  
+                            document.getElementById("itlr").style.color = "blue"; 
+                            document.getElementById("spnr").style.color = "blue"; 
+                            document.getElementById("rusr").style.color = "blue"; 
+                            document.getElementById("russr").style.color = "blue";  
+                            document.getElementById("colw").style.color = "red"; 
+                            document.getElementById('qn1e').innerHTML="your score is "+count+" out of 5";
+                    
+                }
+            </script>
+    </head>
+    <body>
+       
+    
+       
+        <div class="quz1">
+        <form onsubmit="myfuction()" >
+            <h1>please attempt all qn</h1>
+            
+                <ol id="colw">
+                    <li>
+                        <h4>HTML invented by ?</h4>
+                        <input type="radio" name="qn1" value="tim"><span id="lee1"> Lee</span><br>
+                        <input type="radio" name="qn1" value="alan">Alan Turing<br>
+                        <input type="radio" name="qn1" value="stan">Stan Lee<br>
+                        <input type="radio" name="qn1" value="james">james kahn<br>
+
+                    </li>
+                    
+                    <li>
+                            <h4>who won fifa world cup 2006 ?</h4>
+                            <input type="radio" name="qn2" value="bra">Brazil<br>
+                            <input type="radio" name="qn2" value="ger">Germany<br>
+                            <input type="radio" name="qn2" value="itl"><span id="itlr">Itly</span><br>
+                            <input type="radio" name="qn2" value="spain">Spain<br>
+    
+                    </li>
+                    
+                    <li>
+                            <h4>Who is father of indian nuclear science?</h4>
+                            <input type="radio" name="qn3" value="bra">Aryabhat<br>
+                            <input type="radio" name="qn3" value="ger">Raghunath mhashilkar<br>
+                            <input type="radio" name="qn3" value="itl">J R D Tata<br>
+                            <input type="radio" name="qn3" value="spain"><span id="spnr">Homi bhabha</span><br>
+    
+                    </li>
+                    <li>
+                            <h4>which country banned in olympics events after london olympic games?</h4>
+                            <input type="radio" name="qn4" value="afg">Afganistan<br>
+                            <input type="radio" name="qn4" value="rus"><span id="rusr">Russia</span><br>
+                            <input type="radio" name="qn4" value="bel">Belarus<br>
+                            <input type="radio" name="qn4" value="fin">Finland<br>
+    
+                    </li>
+                    <li>
+                            <h4>which country banned in olympics events after london olympic games?</h4>
+                            <input type="radio" name="qn5" value="afg">Afganistan<br>
+                            <input type="radio" name="qn5" value="rus"><span id="russr">Russia</span><br>
+                            <input type="radio" name="qn5" value="bel">Belarus<br>
+                            <input type="radio" name="qn5" value="fin">Finland<br>
+    
+                    </li>
+
+                </ol><br>
+                
+                <button type="button" onclick="myfuction()">submit</button><br>
+                <span id="qn1e"></span>
+                
+            
+        </form>
+        </div>
+    </body>
+</html>

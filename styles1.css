@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background: linear-gradient(red,orange);
+}
+
+.quz1
+{
+    width:80%;
+    margin: 0 auto;
+    
+}
+.quz1 form
+{
+    border: 1px solid;
+    padding-bottom: 60px;
+    background-color: cornsilk;
+    
+    
+}
+ol{
+    font-family: sans-serif;
+}
+
+button{
+    margin-left: 45%;
+}
+h1{ 
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: coral;
+    padding: 30px;
+    text-transform: uppercase;
+}
+#qn1e
+{   margin-top: 80px;
+    margin-left: 130px;
+    color: red;
+    font-size: 25px;
+}
+h4{
+    color: black;
+}
+
+@media only screen and (max-width: 600px)
+{
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .quz1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .quz1 form
+    {
+      
+       width: 100%;
+     
+       
+    }
+    h1{
+        width: 100%;
+    }
+}
