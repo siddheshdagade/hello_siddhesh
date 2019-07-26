@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            welcome to arrow function
+        </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var person1;
+            person1={
+                fullName : function(){
+                    return this.firstName+ " " +this.lastName;
+                }
+            }
+            var person2={
+                firstName : "siddhesh",
+                lastName : "dagade",
+            }
+            var x= person1.fullName.call(person2);
+            document.getElementById('demo').innerHTML= x;
+        </script>
+
+    </body>
+</html>
