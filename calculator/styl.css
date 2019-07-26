@@ -1,0 +1,45 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #097963 43%, #00d4ff 100%);
+}
+
+.calcu {
+  width: 100%;
+  margin-top: 12px;
+  height: 100%;
+}
+
+.cal {
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 100px;
+  margin-left: 800px;
+}
+
+.cal input {
+  height: 62px;
+  width: 62px;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.cal input:hover {
+  border-style: none;
+}
+
+#inp {
+  font-size: 20px;
+  color: green;
+  width: 260px;
+  background-color: black;
+  text-align: right;
+}
+
+/*# sourceMappingURL=styl.css.map */
