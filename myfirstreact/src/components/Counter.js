@@ -1,23 +1,33 @@
-
 import React, { Component } from "react";
+class Counter extends Component{
 
-class Counter extends Component {
     constructor(props){
         super(props);
         this.state= {
-        }
+            count: 0,
+            name: this.props.name
+        };
+        this.chaNge=this.chaNge.bind(this);
     }
 
-    increment() {
+    chaNge() {
+        this.setState({
+            count: this.state.count+1
+            
+            
+        });
+    
     }
+zdsdsdsdsd
 
-    render() {
-        return (
+
+    render(){
+        return(
             <div>
-
+                <div>{this.state.count}</div>
+                <div><button onClick={this.chaNge}> {this.state.name}</button></div>
             </div>
         );
     }
-
 }
 export default Counter;
