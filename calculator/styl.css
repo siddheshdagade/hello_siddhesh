@@ -1,22 +1,16 @@
 body {
   padding: 0px;
   margin: 0px;
-  height: 100vh;
   box-sizing: border-box;
   font: 100% Helvetica, sans-serif;
   color: #333;
-  background: #020024;
   background: linear-gradient(90deg, #020024 0%, #097963 43%, #00d4ff 100%);
 }
 
 .calcu {
-  display: flex;
-  justify-content: center;
-
-  
   width: 100%;
-  
-  height: 100vh;
+  margin-top: 10px;
+  height: 100%;
 }
 
 .cal {
@@ -25,8 +19,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  
-  
+  margin: 0px auto;
 }
 
 .cal input {
@@ -48,9 +41,55 @@ body {
   background-color: black;
   text-align: right;
 }
-html
-{
-  height: 100vh;
+
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .calcu {
+    margin-left: 3px;
+    margin-bottom: -12px;
+    margin-top: -2px;
+  }
+
+  .calc {
+    border: 5px solid;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  body {
+    background: #00d4ff;
+  }
+
+  .cal input {
+    width: 100px;
+    height: 126px;
+    font-size: 34px;
+  }
+
+  #inp {
+    font-size: 44px;
+    width: 400px;
+    height: 103px;
+  }
+
+  .cal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .ss1 {
+    order: 2;
+  }
+
+  .ss2 {
+    order: 1;
+  }
 }
 
 /*# sourceMappingURL=styl.css.map */

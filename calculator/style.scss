@@ -2,29 +2,32 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $full_width:100%;
 $border:1px solid black;
+
+
 body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-  font: 100% $font-stack;
-  color: $primary-color;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 43%, rgba(0,212,255,1) 100%);
+    font: 100% $font-stack;
+    color: $primary-color;
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 43%, rgba(0,212,255,1) 100%);
 }
-.calcu
-{
+.calcu{
     width: $full_width;
-    margin-top: 12px;
+    margin-top: 10px;
     height: 100%;
 }
 .cal
 {   
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: $full_width;
     margin: 0px auto;
-    margin-top: 100px;
-    margin-left: 800px;
+    // margin-top: 100px;
+    // margin-left: 800px;
 }
 .cal input
 {
@@ -48,4 +51,52 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 43%, rgba
     background-color: black;
     text-align: right;
     
+}
+
+
+@media only screen and (max-width: 600px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .calcu{
+        margin-left: 3px;
+        margin-bottom: -12px;
+        margin-top: -2px;
+    }
+    .calc{
+        border: 5px solid;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    body {
+        background: rgba(0,212,255,1)
+
+    }
+    .cal input{
+        width: 100px;
+        height: 126px;
+        font-size: 34px;
+    }
+    #inp
+    {
+        font-size: 44px;
+        width: 400px;
+        height: 103px;
+        
+    }
+    .cal{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .ss1
+    {
+        order: 2;
+    }
+    .ss2
+    {
+        order: 1;
+    }
 }

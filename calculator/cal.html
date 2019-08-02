@@ -1,19 +1,21 @@
 <html>
     <head>
         <title>welcome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styl.css">
+
     </head>
-    <link rel="stylesheet" href="styl.css">
     <body>
         <div class="calcu">
             
             <form class="cal">
             <div class="calc">
-                <input type="text" id="inp" name="input1" placeholder="0">
+                <input class="ss" type="text" id="inp" name="input1" placeholder="0">
                 <br>
-                <input type="button" value="1" onclick="input1.value += '1'">
-                <input type="button" value="2" onclick="input1.value += '2'">
-                <input type="button" value="3" onclick="input1.value += '3'">
-                <input type="button" value="C" onclick="input1.value = input1.value.slice(0,input1.value.length-1) ">
+                <input  type="button" value="1" onclick="input1.value += '1'">
+                <input  type="button" value="2" onclick="input1.value += '2'">
+                <input class="3" type="button" value="3" onclick="input1.value += '3'">
+                <input class="4" type="button" value="C" onclick="input1.value = input1.value.slice(0,input1.value.length-1) ">
                 <br>
 
                 <input type="button" value="4" onclick="input1.value += '4'">
@@ -34,10 +36,10 @@
                 <br>
                 <input type="button" value="/" onclick="input1.value += '/'">
                 <input type="button" value="*" onclick="input1.value += '*'">
-                <input type="button" value="clear" onclick="input1.value = ''">
+                <input class="ss2" type="button" value="clear" onclick="input1.value = ''">
                 
 
-                <input type="button" value="=" onclick="input1.value = eval(input1.value)">
+                <input class="ss1" type="button" value="=" onclick="input1.value = eval(input1.value)">
             </div>
 
             </form>
