@@ -18,7 +18,7 @@ class Counter extends Component{
         });
     
     }
-zdsdsdsdsd
+
 
 
     render(){
