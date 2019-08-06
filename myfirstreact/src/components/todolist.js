@@ -9,6 +9,7 @@ class Todolist extends Component {
         };
         this.addList = this.addList.bind(this);
         this.updateInputValue = this.updateInputValue.bind(this);
+        this.renove = this.updateInputValue.bind(this);
     }
 
     addList() {
@@ -19,6 +20,16 @@ class Todolist extends Component {
             list: newList,
             inputValue: ''
         })
+    }
+
+    renove(e) {
+        let newwList = this.state.list;
+        var index = newwList.indexOf(e.target.value);
+        newwList.splice(index, 1);
+        this.setState({
+            list: newwList
+        })
+
     }
 
     updateInputValue(e) {
@@ -32,8 +43,9 @@ class Todolist extends Component {
                     <ul>
                         {this.state.list.map((item, index) => 
                             <li key={index}>
+                               
                                 <span>{item}</span>
-                                <button>x</button>
+                                <button onClick={this.remove}>x</button>
                             </li>
                         )}        
                     </ul>

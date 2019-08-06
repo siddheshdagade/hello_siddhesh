@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import Counter from "./components/Counter";
-import Todolist from "./components/todolist"
+import Todolist from "./components/todolist";
+import TTdoolist from "./components/Todolist1";
+
 
 class App extends Component{
     render(){
@@ -9,7 +11,8 @@ class App extends Component{
             <Counter name="sai"/>
             <Counter name="aditya"/>
             <Counter name="priyanka"/> */}
-            <Todolist />
+            {/* <Todolist /> */}
+            <TTdoolist />
 
             </div>
         );
