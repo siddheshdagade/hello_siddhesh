@@ -30,7 +30,7 @@ class Todolist extends Component{
         // console.log(listItem.done);
         //const { listItem } = this.props;
         return(<div className="App">
-          <ul >
+          <ul className= "ulist">
              {listItem.map( (value,index)=>{
                  
                 //  console.log(index);

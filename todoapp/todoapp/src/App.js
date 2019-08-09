@@ -51,11 +51,15 @@ updateColor(index){
 render(){
 
   return (
-   <div className="Appname">To Do List
-     <Todoform addItem={this.addItem} />
-     <Todolist className="todolist" listItem={this.state.list} removeItem={this.removeItem} updateColor={this.updateColor}/>
-     
-   </div>
+   <div className="Appname">
+     <div>To Do List</div>
+        <div>
+              <Todoform addItem={this.addItem} />
+        </div>
+        <div>
+              <Todolist className="todolist" listItem={this.state.list} removeItem={this.removeItem} updateColor={this.updateColor}/>
+        </div>
+    </div>
   );
 }
 }

@@ -3,3 +3,11 @@
     text-decoration: line-through;
     color: red;
 }
+.ulist{
+display: block;
+
+}
+li{
+    list-style: none;
+    display: block;
+}
