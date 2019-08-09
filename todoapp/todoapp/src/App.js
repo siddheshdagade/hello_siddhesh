@@ -8,7 +8,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state={
-      list: []
+      list: [],
+      enter: "To Do List"
     }
     this.addItem = this.addItem.bind(this);
     this.removeItem = this.removeItem.bind(this);
@@ -16,9 +17,14 @@ class App extends Component {
   }
 
 addItem(value,index){
+  if(value !== ""){
   var arr = [...this.state.list, {value: value, index: index, done: false}]
   // console.log(arr);
-  this.setState({list: arr});
+  this.setState({list: arr, enter : "To Do List"});
+  }
+  else{
+      this.setState({enter:"Please enter something"});
+    console.log("please enter something")}
   
 }
 removeItem(index){
@@ -52,7 +58,7 @@ render(){
 
   return (
    <div className="Appname">
-     <div>To Do List</div>
+     <div>{this.state.enter}</div>
         <div>
               <Todoform addItem={this.addItem} />
         </div>

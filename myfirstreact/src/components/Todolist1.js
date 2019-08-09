@@ -30,8 +30,8 @@ class TToodolist extends Component{
     }
 
     remove(i) {
-        console.log('i', i);
-        console.log('this item', this.state.list[i])
+        // console.log('i', i);
+        // console.log('this item', this.state.list[i])
         let rem = this.state.list
         rem.splice(i,1);
         this.setState({
