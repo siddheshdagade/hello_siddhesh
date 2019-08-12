@@ -1,13 +1,24 @@
 
 .undone {
     text-decoration: line-through;
-    color: red;
+    color: rgb(255, 102, 0);
 }
 .ulist{
 display: block;
+wi
 
 }
 li{
     list-style: none;
-    display: block;
+}
+.formInput{
+    display: flex;
+    justify-content: center;
+}
+.ulist{
+    background-color: antiquewhite;
+   
+  
+   
+    
 }

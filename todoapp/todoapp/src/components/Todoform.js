@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Todolist.css"
 class Todoform extends Component{
     constructor(props){
         super(props);
@@ -24,7 +24,7 @@ class Todoform extends Component{
 
     render(){
        
-        return(<div>
+        return(<div className="formInput">
             <input type="text" value={this.state.inputvalue} onChange={this.changeInput} />
             
             <button type="button" onClick={this.addnewItem}>Add Me</button>
